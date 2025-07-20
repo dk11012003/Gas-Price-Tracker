@@ -46,8 +46,8 @@ const Chart: React.FC = () => {
       timeScale: {
         timeVisible: true,
         secondsVisible: true,
-        tickMarkFormatter: (time) => {
-      const date = new Date(time * 1000); 
+        tickMarkFormatter: (time : number) => {
+      const date = new Date(time as any * 1000); 
       return date.toLocaleTimeString('en-IN', {
         hour: '2-digit',
         minute: '2-digit',
